@@ -9,12 +9,12 @@ public:
     Node *next;
 };
 
-class List
+class SingleLinkedList
 {
     Node *START;
 
 public:
-    List()
+    SingleLinkedList()
     {
         START = NULL;
     }
@@ -56,4 +56,9 @@ public:
         nodeBaru->next = current;
         previous->next = nodeBaru;
     }
-    
+
+    bool listEmpty()
+    {
+        return (START == NULL);
+    }
+}
